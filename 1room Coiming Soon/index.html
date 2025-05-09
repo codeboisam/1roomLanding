@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1Room - Coming Soon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #000957, #0f2c94);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1.5em;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 20px;
+      font-size: 1.5em;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+
+    .countdown div {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .svg-container {
+      max-width: 400px;
+      margin: 2em auto;
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+
+    .btn-roadmap {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-invest {
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .roadmap-section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .roadmap-item {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .roadmap-item:before {
+      content: "•";
+      color: #FFD700;
+      font-size: 1.5em;
+      position: absolute;
+      left: 0;
+      top: -5px;
+    }
+
+    .roadmap-title {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #FFD700;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .countdown {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+      .roadmap-section {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="svg-container">
+    <!-- Replace this placeholder with your actual SVG -->
+    <img src="logo.png" alt="1Room Coming Soon" style="width: 100%; max-width: 350px;" />
+  </div>
+
+  <h1>1Room is Coming Soon</h1>
+  <p><strong>Whether you're looking for a cozy low-cost home, a premium luxury apartment, a flexible office space, or the perfect event venue, The 1Room APP connects you to the best rental Spaces And Spots anywhere in Zimbabwe.</strong></p>
+  <p>" With AI-powered search, verified listings, Landlords and businesses can also list Rental Spaces effortlessly, reaching thousands of potential clients instantly without wasting resources "</p>
+
+  <div class="countdown" id="countdown">
+    <div><span id="days">0</span><br/>Days</div>
+    <div><span id="hours">0</span><br/>Hours</div>
+    <div><span id="minutes">0</span><br/>Minutes</div>
+    <div><span id="seconds">0</span><br/>Seconds</div>
+  </div>
+
+  <div class="action-buttons">
+    <a href="https://wa.me/+263773840491" class="btn btn-whatsapp" target="_blank">
+      Contact Developer
+    </a>
+    <a href="#roadmap" class="btn btn-roadmap">
+      Our Roadmap
+    </a>
+    <a href="#invest" class="btn btn-invest">
+      Invest in Startup
+    </a>
+  </div>
+
+  <div class="roadmap-section" id="roadmap">
+    <div class="roadmap-title">Our Development Roadmap</div>
+    <div class="roadmap-item">FEB 2025: Concept Development & Market Research</div>
+    <div class="roadmap-item">APRIL 2025: Core Team Assembly & Initial Funding</div>
+    <div class="roadmap-item">MARCH 2025: MVP Development & Beta Testing</div>
+    <div class="roadmap-item">MAY 2025: Platform Optimization & Partner Onboarding</div>
+    <div class="roadmap-item">MAY 2025: Marketing Campaign & User Acquisition</div>
+    <div class="roadmap-item">JUNE 2025: Official Launch & Expansion Plans</div>
+  </div>
+
+  <div class="roadmap-section" id="invest">
+    <div class="roadmap-title">Investment Opportunities</div>
+    <p>We're looking for visionary investors to join us in revolutionizing Zimbabwe's Digital space. Our startup offers stake ownership opportunities in 1Room For Angel Capital As We Develop Our Vision with potential for Partnership In Future Web Projects as we scale up.</p>
+    <p>For investment inquiries, please contact us via WhatsApp or email at <strong>partner@1room.homes</strong></p>
+  </div>
+
+  <footer><p>Made With Love<span style="color: red;">❤️</span> </p>All rights reserved</footer>
+
+  <script>
+    const countdownDate = new Date("2025-06-01T00:00:00").getTime();
+
+    const x = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "We've launched!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
